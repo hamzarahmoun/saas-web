@@ -1231,7 +1231,7 @@
             var fullScreen = doc.fullScreen || doc.mozFullScreen || doc.webkitIsFullScreen || doc.msFullscreenElement || Boolean(doc.webkitFullscreenElement);
             $(brandElement).attr("style", fullScreen ? "display: none !important;" : "");
           }
-          
+        
           function ensureBrand() {
             var found = $body.children(namespace);
             var match = found.length && found.get(0) === brandElement;
